@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(12, 12, 12);
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    color: white;
+
+}
+.nav .img1 img{
+    margin: 0;
+    height: 30px;
+    width: 30px;
+}
+.nav .img1{
+    border: 2px solid black;
+    height: 100%;
+    width: 60px;
+    display: flex;
+    color: white;    /* background: url("logo.png"); */
+    display: flex;
+    align-items: center;
+}
+
+
+.sidebar{
+    display: flex;
+    /* border:2px solid red; */
+    /* justify-content: end; */
+    position: relative;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+}
+
+.cont:hover{
+    color: rgb(179, 176, 176);
+
+}
+
+
+.mid{
+    /* background-color: rgb(217, 232, 143); */
+    /* height: 75vh; */
+    width: 70%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    margin: 23px auto;
+    border-radius: 10px;
+    padding: 34px;
+    background-image: url("");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: url("./img/bg.jpg");
+    /* background: no-repeat; */
+    background-size: cover;
+
+}
+
+
+
+footer{
+    position: sticky;
+    bottom: 0;
+    background-color: rgb(198, 191, 191);
+    height: 15vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+    transition-duration: 0.0s;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 50%;
+    color: black;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    
+}
+.songItem img{
+    height: 30px;
+    width: 30px;
+    border-radius: 34px;
+    
+}
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 14px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+.songlistplay img{
+    height: 12px;
+    width: 20px;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    top: 35px;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+
+}
