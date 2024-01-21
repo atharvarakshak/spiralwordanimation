@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>closure</title>
+  </head>
+  <body>
+    <script>
+      function outer() {
+        let count = 0;
+        let t=1
+
+        function inner()      //inner function
+         {
+          count++;
+          t++
+          console.log(count);
+          console.log(t);
+        }
+
+        return inner;
+      }
+
+      const closure = outer();
+      closure(); // Output: 1
+      closure(); // Output: 2
+      closure(); // Output: 2
+    </script>
+  </body>
+</html>

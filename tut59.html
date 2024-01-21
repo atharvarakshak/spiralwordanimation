@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAte and Time</title>
+</head>
+<body>
+    <div class="container">
+        tjis is a container
+        current Time <span id="time"></span>
+    </div>
+    <script>
+        console.log("Date")
+        let now=new Date();
+        console.log(now)
+        let now1=new Date();
+        console.log(now1)
+        let newDate =new Date("2029-09-30")
+        // let newDate1 =new Date("year,month,date,hours,minutes,seconds,milliseconds")
+        let newDate1=new Date(3020,9,10,10,59,30,34)
+        console.log(newDate)
+        console.log(newDate1)
+        let yr=newDate1.getFullYear();
+        console.log("this iyear is ",yr)
+        let mn=newDate1.getMonth();
+        console.log("this iyear is ",mn)
+        let dt=newDate1.getDate();
+        console.log("this iyear is ",dt)
+        
+        newDate1.setDate(5)
+        
+        console.log(newDate1)
+        function updateTime()
+        {
+            time.innerHTML=new Date();
+        }
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>

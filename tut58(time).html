@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setinterval& cleartimeout & setTimeout</title>
+</head>
+<body>
+    <div class="container">
+        <span id="time">
+        Time nw is 
+
+
+    </span>
+    </div>
+    <script>
+        console.log('this is a k')
+        // setTimeout --> Allows us to run function once after interval of time;
+        // clearTimeout --> Allows us to run function repeatedly after interval of time;
+        function greet(name,byeText)
+        {
+            console.log('hello goos morning'+name+"      "+byeText);
+
+        }
+        setTimeout(() => {
+            console.log("hello good morning")
+        }, 1000);
+        setTimeout(greet,4000,"harry","Goodbye")
+        // can sent multiple arguments
+        // you cannot call function inside setTimeout
+        timeout=setTimeout(greet,5000,"herry","takecare")
+        console.log(timeout)
+        clearTimeout(timeout)
+        intervalID=setInterval(greet,1000,"harru","Good morning")
+        clearInterval(intervalID)
+
+
+        function displayTime()
+        {
+            time=new Date();
+            console.log(time)
+            document.getElementById('time').innerHTML=time;
+
+        }
+        setInterval(displayTime,1000)
+
+
+    </script>
+</body>
+</html>

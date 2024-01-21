@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Popins',sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg,yellow,green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px ;
+    margin-bottom: 50px ;
+
+
+}
+textarea{
+    width: 600px;
+    height: 250px;
+    background: #403d84;
+    color: #fff;
+    font-size: 15px;
+    border: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+button{
+    border-radius: 5px;
+    background-color: powderblue;
+    padding: auto;
+    height: 40px;
+    width: 60px;
+}
+select{
+    flex: 1;
+    color: #fff;
+    background-color: aqua ;
+    height: 40px;
+    /* width: 100%; */
+    width: 60px;
+    padding: 0 20px;
+    border-radius: 5px;
+    background-size: 15px;
+
+}

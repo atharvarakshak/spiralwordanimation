@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listners</title>
+    <style>
+        #btn{
+            padding: 34px ;
+            border:2px solid black;
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   #### browser events
+    
+    click
+    contextMenue
+    mouseout/mouseover
+    mousedown/mouseup
+    mousemove
+    submit
+    focus
+    dom content loaded
+    transition
+    <div class="container">
+        <h1>this is my head</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ducimus. Nihil architecto, optio vero perferendis inventore itaque, accusantium repellendus dolorum quam at aliquid earum, sit voluptatum ratione consectetur asperiores tempora.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit omnis voluptas sint iusto, facilis nihil temporibus numquam quas adipisci enim maiores molestias. Provident eveniet illum, assumenda tenetur quia obcaecati iusto?
+        </p>
+        <button id="btn" onclick="hide()">Show/Hide</button>
+    </div>
+    <script>
+        let para=document.getElementById('para');
+
+        para.addEventListener('mouseover',function run(){
+            console.log('Mouse inside')
+        })
+        para.addEventListener('mouseout',function run(){
+            console.log('Mouse outside')
+        })
+
+        function hide()
+        {
+            let btn=document.getElementById('btn');
+            let para=document.getElementById('para');
+            if(para.style.display!="none")
+            {
+               para.style.display="none";
+            }
+            else{
+                 para.style.display="block";
+
+             }
+
+
+        }
+    </script>
+
+</body>
+</html>

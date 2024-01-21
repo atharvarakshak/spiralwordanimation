@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script string function</title>
+</head>
+<body>
+    <script>
+        var str="foii iopPPOPOopis iooiopp"
+        console.log(str)
+        var position=str.indexOf('is'); //gives first occurence of 'is'
+        console.log(position)
+        position=str.lastIndexOf('pop');
+        console.log(position);
+        var substr=str.slice(1,6); //slices the character
+        var substr=str.substring(1,7); //n substring we cannot give negative values
+        console.log(substr);
+        var substr1=str.substr(2,7);  //2 -start point 3- no of character
+        console.log(substr1);
+        var replaced=str.replace('iooi','hello')
+        console.log(replaced);
+        console.log(str);
+        var string2=str.replace();
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        
+        console.log(str.concat('hello world'));
+        var strWithWhitespaces="   this contains whitespaces   "
+        console.log(strWithWhitespaces);
+        console.log(strWithWhitespaces.trim()); //trims white spaces on both side of the string
+        var char3=str.charAt(2);
+        console.log(char3);
+        
+
+
+
+    </script>
+</body>
+</html>
