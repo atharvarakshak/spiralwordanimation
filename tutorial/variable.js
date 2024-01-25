@@ -1,7 +1,21 @@
 let name ='Myname';
- name ='ppppp';
+const accId = "ath@gmail.com"
+var pass = "12345"
+// city = "Nagpur"
 
-console.log(name);
+// name ='Ath'
+// accId = 'asakj@gmail.com'
+// pass = '43354'
+// city = "kalyan"
+
+
+// console.log(name);
+console.log(accId);
+console.log(pass);
+// console.log(city);
+// city = 'kalyan'
+
+console.table([name,pass,accId])
 
 
 let age=19;
